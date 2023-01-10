@@ -24,6 +24,12 @@ const theme = createTheme({
       color: "#212121",
       fontWeight: 700,
     },
+    feedbackPageText: {
+      color: "#212121",
+      fontWeight: 400,
+      fontSize: "17px",
+      marginBottom: "0.5rem",
+    },
     header: {
       color: "#000000",
       fontSize: "1.6rem",
@@ -46,7 +52,7 @@ const theme = createTheme({
       marginBottom: "0.5rem",
     },
     questionText: {
-      fontSize: "1.6rem",
+      fontSize: "1.2rem",
       fontWeight: 600,
       textAlign: "center",
     },

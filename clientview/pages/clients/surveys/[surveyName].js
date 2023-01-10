@@ -120,6 +120,14 @@ const surveyView = () => {
           variant="contained"
           sx={{ py: 2, px: 3, fontSize: "0.9rem" }}
           color="primary"
+          onClick={() =>
+            router.push({
+              pathname: `clients/surveys/${surveyName}/questions`,
+              query: {
+                project: projectName,
+              },
+            })
+          }
         >
           GET STARTED
         </Button>

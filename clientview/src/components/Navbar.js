@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import LogoHeader from "./LogoHeader";
 
-const Navbar = () => {
+const Navbar = ({ projectName }) => {
   return (
     <Box
       bgcolor="#FFFFFF"
@@ -13,7 +13,12 @@ const Navbar = () => {
       }}
     >
       <LogoHeader />
-      <Typography variant="navbar">Project:</Typography>
+      <Box sx={{ display: "flex" }}>
+        <Typography variant="navbar">Project:</Typography>
+        <Typography color="primary" variant="navbar" sx={{ ml: -3 }}>
+          {projectName}
+        </Typography>
+      </Box>
     </Box>
   );
 };
